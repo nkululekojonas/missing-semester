@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# Get system battery info 
-pmset -g batt | grep -o '[0-9]*%' | awk '{print "Battery Percentage: " $0}'

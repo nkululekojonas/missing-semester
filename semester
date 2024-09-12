@@ -1,3 +1,0 @@
-#!/bin/sh
-curl --head --silent https://missing.csail.mit.edu | grep last-modified > last-modified.txt
-
