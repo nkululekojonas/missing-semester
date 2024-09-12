@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Find all HTML files in the folder and makes a zip with them
+find . -type f -name "*.html" -print0 | xargs -0 zip html_files.zip
+
+# Find the most recently modified file in a directory. More generally, find list all files by recency
+find /path/to/directory -type f -printf '%T+ %p\n' | sort -r | head -n 1 | cut -d' ' -f2-

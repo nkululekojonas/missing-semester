@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# List all files including hidden ones; In human readable format; Files ordered by recency; Colorised ouput
+ls -alh --color=auto
