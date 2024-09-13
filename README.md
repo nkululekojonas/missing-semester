@@ -25,7 +25,7 @@ To view or use the solutions and code:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/missing-semester-exercises.git
+   git clone https://github.com/nkululekojonas/missing-semester-exercises.git
    cd missing-semester-exercises
 
 2.Explore the Exercises
@@ -41,17 +41,3 @@ To view or use the solutions and code:
   License
 
   This repository is licensed under the MIT License. See the LICENSE file for more information.
-
-  Contact
-
-  For any questions or feedback, please contact your-email@example.com.
-
-  ### Steps to Create the File
-
-  1. **Open a Text Editor**: Open a text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.
-
-  2. **Paste the Content**: Copy the content above and paste it into your text editor.
-
-  3. **Save the File**: Save the file as `README.md`. Make sure to choose "All Files" in the file type dropdown if using Notepad, and ensure the file extension is `.md`.
-
-  You can now upload this `README.md` file to your GitHub repository. Let me know if you need any further assistance!
