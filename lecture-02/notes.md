@@ -106,7 +106,7 @@ debug.sh
 
 4. **Q: Your task is to write a command that recursively finds all HTML files in the folder and makes a zip with them. Note that your command should work even if the files have spaces (hint: check -d flag for xargs)**
 
-    A: 
+    A: `fd -e html -X zip html_files.zip`
 
 5. **Q: (Advanced) Write a command or script to recursively find the most recently modified file in a directory. More generally, can you list all files by recency?**
 
