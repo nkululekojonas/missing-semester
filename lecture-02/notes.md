@@ -19,7 +19,7 @@
     echo "Starting programing at $(date)"
 
     echo "Running program $0 with $# arguments on process $$"
-    
+
     for file in "$@"; do 
         grep foobar "$file" /dev/null &>2
 
@@ -29,6 +29,7 @@
         fi 
     done
     ```
+
 ## Questions/Confusions
 [stuff that didn't click yet]
 
