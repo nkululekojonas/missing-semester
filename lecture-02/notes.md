@@ -43,11 +43,21 @@
         -A sample output would look like this**
 
 
-        A: 
+        A: `ls -alth --color=auto`
+
+        Output:
+        ```
+        total 32
+        -rw-r--r--  1 nkululekojonas  staff    12K 18 Nov 13:09 .notes.md.swp
+        drwxr-xr-x  5 nkululekojonas  staff   160B 18 Nov 13:09 .
+        -rw-r--r--  1 nkululekojonas  staff   3.2K 18 Nov 13:01 notes.md
+        drwxr-xr-x  6 nkululekojonas  staff   192B 18 Nov 10:21 ..
+        drwxr-xr-x  2 nkululekojonas  staff    64B 18 Nov 10:19 exercises
+        ```
 
 2.  **Q: Write bash functions marco and polo that do the following. Whenever you execute marco the current working directory should be saved in some manner, then when you execute polo, no matter what directory you are in, polo should cd you back to the directory where you executed marco. For ease of debugging you can write the code in a file marco.sh and (re)load the definitions to your shell by executing source marco.sh.**
 
-        A:
+        A: **See exercises**
 
 3.  **Q: Say you have a command that fails rarely. In order to debug it you need to capture its output but it can be time consuming to get a failure run. Write a bash script that runs the following script until it fails and captures its standard output and error streams to files and prints everything at the end. Bonus points if you can also report how many runs it took for the script to fail.**
 
