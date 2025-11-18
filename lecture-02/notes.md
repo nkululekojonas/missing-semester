@@ -74,7 +74,7 @@ random.sh:
     echo "Everything went according to plan"
 ```
 
-    **Solution: **
+    Solution:
 debug.sh
 ```bash
     #!/bin/bash
