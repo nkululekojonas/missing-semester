@@ -58,6 +58,8 @@ done
     A: **See exercises**
 
 3. **Q: Say you have a command that fails rarely. In order to debug it you need to capture its output but it can be time consuming to get a failure run. Write a bash script that runs the following script until it fails and captures its standard output and error streams to files and prints everything at the end. Bonus points if you can also report how many runs it took for the script to fail.**
+
+random.sh:
 ```bash 
     #!/usr/bin/env bash
 
@@ -70,6 +72,36 @@ done
     fi
 
     echo "Everything went according to plan"
+```
+
+    **Solution: **
+debug.sh
+```bash
+    #!/bin/bash
+
+    if [ "$#" -ne 1 ]; then
+        echo "Usage: $0 file"
+        exit 1
+    fi 
+
+    error_file="${1}-error.log"
+    output_file="${1}-output.log"
+
+    count=0
+    while true; do
+    (( count++))
+
+    if ! ./"$1" >> "$output_file" 2>> "$error_file"; then
+        echo "Script failed after $count runs"
+        echo ""
+        echo "=== Standard Output ==="
+        cat "$output_file"
+        echo ""
+        echo "=== Standard Error ==="
+        cat "$error_file"
+        break
+    fi
+    done
 ```
 
 4. **Q: Your task is to write a command that recursively finds all HTML files in the folder and makes a zip with them. Note that your command should work even if the files have spaces (hint: check -d flag for xargs)**
